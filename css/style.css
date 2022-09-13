@@ -1,0 +1,186 @@
+/* generali */
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body{
+  font-family:Arial, Helvetica, sans-serif;
+}
+
+/*header*/
+header{
+  display: flex;
+  align-items: center;
+  background-color: #3061e0;
+  height: 80px; 
+}
+
+header .container{
+  width: 90%;
+  max-width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+}
+
+header .container span{
+  background-color: lightblue;
+  padding: 10px;
+  margin: 20px 0;
+}
+
+/*main*/
+
+/*jumbotron*/
+main .jumbotron {
+  background-color: aqua;
+  height: 550px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+main .jumbotron .intro{
+  max-width: 800px;
+  
+  margin: 0 auto;
+  padding: 10px;
+  background-color: cornflowerblue;
+  height: 200px; /*da togliere*/
+  text-align: center;
+}
+
+/*sezione con informazioni e immagini*/
+
+/*blocchi con immagine e testo*/
+main .info {
+  width: 90%;
+  height: 350px; /*da togliere*/
+  background-color: greenyellow;
+  margin: 0 auto;
+  margin-top: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+main .info .immagine{
+  width: 52%;
+  min-height: 300px; /*da togliere*/
+  background-color: gold;
+  margin-left: 10px;
+}
+
+main .info .testo{
+  width: 42%;
+  min-height: 300px; /*da togliere*/
+  background-color: lightgoldenrodyellow;
+  margin-right: 10px;
+}
+
+/*blocco con sfondo, testo e immagine*/
+main .colored {
+  height: 500px; /*da togliere*/
+  background-color: #F6F6F6;
+  margin-top: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+main .colored .immagine-reverse{
+  margin-right: 10px;
+}
+
+main .colored .testo-reverse{
+  margin-left: 10px;
+}
+
+/*sezione con un unico blocco*/
+
+main .colored-2 {
+  height: 500px; /*da togliere*/
+  background-color: #F6F6F6;
+  margin-top: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+/*parte top della sezione con testo e immagine*/
+main .colored-2 .top {
+  width: 90%;
+  height: 400px; /*da togliere*/
+  background-color: orchid;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+main .colored-2 .testo-top{
+  height: 100px;
+  text-align: center;
+  width: 95%;
+  background-color: blueviolet;
+}
+
+main .colored-2 .immagine-top{
+  background-color: red;
+  width: 95%;
+  height: 300px
+}
+
+/*parte bottom della sezione con testo e pulsante*/
+main .colored-2 .bottom {
+  width: 90%;
+  height: 100px; /*da togliere*/
+  background-color: pink;
+  display: flex;
+  justify-content: center;
+}
+
+/*footer*/
+footer{
+  height: 400px; /*da togliere*/
+  background-color: #24272A;
+}
+
+footer .container{
+  width: 90%;
+  margin: 0 auto;
+  padding-top: 20px;
+  display: flex;
+  align-items: center;
+}
+
+/*colonna della lingua*/
+footer .container .lingua{
+  background-color: beige;
+  height: 200px; /*da togliere*/
+  width: calc(100% / 3);
+}
+
+/*colonne dei menu*/
+footer .container .menu{
+  background-color: brown;
+  height: 200px; /*da togliere*/
+  width: calc(100% / 6);
+  border: 1px solid black;
+}
+
+/*sezione del footer con logo e pulsante*/
+footer .end{
+  width: 90%;
+  min-height: 100px;
+  margin: 0 auto;
+  padding: 20px 10px;
+  display: flex;
+  justify-content: space-between;
+  background-color: peachpuff;
+}
+
+
