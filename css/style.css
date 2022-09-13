@@ -115,11 +115,20 @@ main .jumbotron #jumbo-button-2{
 
 /*sezione con informazioni e immagini*/
 
+.info h2{
+  color: #23272a;
+  font-size: 40px;
+  margin-bottom: 10px;
+}
+
+.info p{
+  color:#23272a;
+  line-height: 150%;
+}
+
 /*blocchi con immagine e testo*/
 main .info {
   width: 90%;
-  height: 350px; /*da togliere*/
-  background-color: greenyellow;
   margin: 0 auto;
   margin-top: 40px;
   display: flex;
@@ -128,22 +137,17 @@ main .info {
 }
 
 main .info .immagine{
-  width: 52%;
-  min-height: 300px; /*da togliere*/
-  background-color: gold;
+  width: 60%;
   margin-left: 10px;
 }
 
 main .info .testo{
-  width: 42%;
-  min-height: 300px; /*da togliere*/
-  background-color: lightgoldenrodyellow;
+  width: 35%;
   margin-right: 10px;
 }
 
 /*blocco con sfondo, testo e immagine*/
 main .colored {
-  height: 500px; /*da togliere*/
   background-color: #F6F6F6;
   margin-top: 40px;
   display: flex;
@@ -162,7 +166,6 @@ main .colored .testo-reverse{
 /*sezione con un unico blocco*/
 
 main .colored-2 {
-  height: 500px; /*da togliere*/
   background-color: #F6F6F6;
   margin-top: 40px;
   display: flex;
@@ -174,8 +177,6 @@ main .colored-2 {
 /*parte top della sezione con testo e immagine*/
 main .colored-2 .top {
   width: 90%;
-  height: 400px; /*da togliere*/
-  background-color: orchid;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -186,13 +187,11 @@ main .colored-2 .testo-top{
   height: 100px;
   text-align: center;
   width: 95%;
-  background-color: blueviolet;
+  
 }
 
 main .colored-2 .immagine-top{
-  background-color: red;
-  width: 95%;
-  height: 300px
+  width: 95%; /*da togliere?*/
 }
 
 /*parte bottom della sezione con testo e pulsante*/
