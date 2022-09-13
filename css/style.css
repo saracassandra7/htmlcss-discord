@@ -115,13 +115,13 @@ main .jumbotron #jumbo-button-2{
 
 /*sezione con informazioni e immagini*/
 
-.info h2{
+.info h2, .testo-top h2{
   color: #23272a;
   font-size: 40px;
   margin-bottom: 10px;
 }
 
-.info p{
+.info p, .testo-top p{
   color:#23272a;
   line-height: 150%;
 }
@@ -171,8 +171,9 @@ main .colored-2 {
   display: flex;
   justify-content: center;
   align-items: center;
-  flex-wrap: wrap;
+  flex-wrap: wrap; 
 }
+
 
 /*parte top della sezione con testo e immagine*/
 main .colored-2 .top {
@@ -181,34 +182,39 @@ main .colored-2 .top {
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  margin-top: 70px;
 }
 
 main .colored-2 .testo-top{
-  height: 100px;
   text-align: center;
-  width: 95%;
-  
+  width: 90%;
 }
 
+
 main .colored-2 .immagine-top{
-  width: 95%; /*da togliere?*/
+  width: 90%;
+  text-align: center;
 }
 
 /*parte bottom della sezione con testo e pulsante*/
 main .colored-2 .bottom {
   width: 90%;
-  height: 100px; /*da togliere*/
-  background-color: pink;
+  padding: 10px;
+  background-image: url(../img/stars.svg);
+  background-size: auto;
+  background-repeat: no-repeat;
+  background-position: center;
   display: flex;
   justify-content: center;
 }
 
 /*Pulsante bottom*/
-main .colored-2 .bottom #bottom-button{
+main .colored-2 #bottom-button{
   font-size: 16px;
   padding: 15px 25px;
   color: white;
   background-color: #8ea1e1;
+  margin-bottom: 70px;
 }
 
 /*footer*/
