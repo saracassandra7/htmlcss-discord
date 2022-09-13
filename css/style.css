@@ -12,10 +12,12 @@ body{
 button{
   border: none;
   text-align: center;
-  text-decoration: none;
   display: inline-block;
   border-radius: 30px;
-  
+}
+
+.menu ul li a:hover{
+  text-decoration: underline;
 }
 
 /*header*/
@@ -60,7 +62,6 @@ header #header-button{
   font-size: 15px;
   padding: 10px 20px;
 }
-
 
 /*main*/
 
@@ -155,14 +156,6 @@ main .colored {
   align-items: center;
 }
 
-main .colored .immagine-reverse{
-  margin-right: 10px;
-}
-
-main .colored .testo-reverse{
-  margin-left: 10px;
-}
-
 /*sezione con un unico blocco*/
 
 main .colored-2 {
@@ -173,7 +166,6 @@ main .colored-2 {
   align-items: center;
   flex-wrap: wrap; 
 }
-
 
 /*parte top della sezione con testo e immagine*/
 main .colored-2 .top {
@@ -189,7 +181,6 @@ main .colored-2 .testo-top{
   text-align: center;
   width: 90%;
 }
-
 
 main .colored-2 .immagine-top{
   width: 90%;
@@ -220,6 +211,22 @@ main .colored-2 #bottom-button{
 /*footer*/
 footer{
   background-color: #24272A;
+  padding-bottom: 30px;
+}
+
+footer .container{
+  width: 90%;
+  margin: 0 auto;
+  padding-top: 70px;
+  padding-bottom: 20px;
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+}
+
+/*colonna della lingua*/
+footer .container .lingua{
+  width: calc(100% / 3);
 }
 
 footer h3{
@@ -244,31 +251,14 @@ footer .social-icons i{
   padding: 0 10px;
 }
 
-
-footer .container{
-  width: 90%;
-  margin: 0 auto;
-  padding-top: 70px;
-  padding-bottom: 20px;
-  display: flex;
-  justify-content: flex-start;
-  align-items: flex-start;
+/*colonne dei menu*/
+footer .container .menu{
+  width: calc(100% / 6);
 }
 
 footer .menu{
   display: flex;
   flex-direction: column;
-}
-
-/*colonna della lingua*/
-footer .container .lingua{
-  width: calc(100% / 3);
-  
-}
-
-/*colonne dei menu*/
-footer .container .menu{
-  width: calc(100% / 6);
 }
 
 footer .menu span{
@@ -291,9 +281,14 @@ footer .end{
   min-height: 100px;
   margin: 0 auto;
   padding: 20px 10px;
+  border-top: 1px solid #7289da;
   display: flex;
   justify-content: space-between;
-  background-color: peachpuff;
+}
+
+footer .end .logo img{
+  width: 100px;
+  padding-top: 15px;
 }
 
 footer #footer-button{
