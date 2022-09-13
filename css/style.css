@@ -9,6 +9,15 @@ body{
   font-family:Arial, Helvetica, sans-serif;
 }
 
+button{
+  border: none;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  border-radius: 30px;
+  
+}
+
 /*header*/
 header{
   display: flex;
@@ -25,11 +34,33 @@ header .container{
   justify-content: space-between;
 }
 
-header .container span{
-  background-color: lightblue;
-  padding: 10px;
-  margin: 20px 0;
+header .logo{
+  padding-top: 10px;
 }
+
+/*Menu nav*/
+header .menu ul{
+  display: flex;
+  list-style: none;
+}
+
+header .menu ul li{
+  padding: 20px;
+}
+
+header .menu ul li a{
+  text-decoration: none;
+  color: white;
+}
+
+/*pulsante accedi*/
+header #header-button{
+  margin-top: 10px;
+  background-color: white;
+  font-size: 15px;
+  padding: 10px 20px;
+}
+
 
 /*main*/
 
@@ -50,6 +81,23 @@ main .jumbotron .intro{
   background-color: cornflowerblue;
   height: 200px; /*da togliere*/
   text-align: center;
+}
+
+/*pulsanti nel jumbotron*/
+main .jumbotron button{
+  font-size: 16px;
+  padding: 15px 25px;
+}
+
+main .jumbotron #jumbo-button-1{
+  background-color: white;
+  margin-right: 20px;
+}
+
+
+main .jumbotron #jumbo-button-2{
+  background-color: #23272a;
+  color: white;
 }
 
 /*sezione con informazioni e immagini*/
@@ -143,6 +191,14 @@ main .colored-2 .bottom {
   justify-content: center;
 }
 
+/*Pulsante bottom*/
+main .colored-2 .bottom #bottom-button{
+  font-size: 16px;
+  padding: 15px 25px;
+  color: white;
+  background-color: #8ea1e1;
+}
+
 /*footer*/
 footer{
   height: 400px; /*da togliere*/
@@ -181,6 +237,14 @@ footer .end{
   display: flex;
   justify-content: space-between;
   background-color: peachpuff;
+}
+
+footer #footer-button{
+  margin-top: 10px;
+  background-color: #8ea1e1;
+  color: white;
+  font-size: 14px;
+  padding: 10px 20px;
 }
 
 

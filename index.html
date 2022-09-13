@@ -5,6 +5,8 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
   <link rel="stylesheet" href="css/style.css">
 
   <title>Struttura Discord</title>
@@ -12,9 +14,25 @@
 <body>
   <header>
     <div class="container">
-      <span>LOGO</span>
-      <span>MENU</span>
-      <span>PULSANTE</span>
+      
+      <!-- logo Discord -->
+      <div class="logo">
+        <img src="img/logo.svg" alt="logo Discord">
+      </div>
+
+      <!-- Menù di navigazione -->
+      <nav class="menu">
+        <ul>
+          <li><a href="#">Scarica</a></li>
+          <li><a href="#">Perché Discord</a></li>
+          <li><a href="#">Nitro</a></li>
+          <li><a href="#">Sicurezza</a></li>
+          <li><a href="#">Assistenza</a></li>
+        </ul>
+      </nav>
+
+      <!-- Pulsante Accedi -->
+      <div class="button"><button id="header-button">Accedi</button></div>
     </div>
   </header>
 
@@ -23,10 +41,10 @@
       <section class="intro">
         <h2>Lorem Ipsum</h2>
         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas nostrum vel porro minima libero, commodi dolorem voluptate ut debitis! Iure!</p>
-        <span>
-          <button>bottone</button>
-          <button>bottone</button>
-        </span>
+        <div class="button">
+          <button id="jumbo-button-1"> <i class="fa-solid fa-down-long"></i> Scarica per Mac</button>
+          <button id="jumbo-button-2">Apri Discord nel tuo browser</button>
+        </div>
       </section>
     </div>
 
@@ -69,10 +87,12 @@
       </div>
 
       <div class="bottom">
-        <div class="testo-bottom">
-          <h2>Lorem ipsum</h2>
-         <button>bottone</button>
+        <h2>Lorem ipsum</h2>
+
+        <div class="button">
+          <button id="bottom-button"> <i class="fa-solid fa-down-long"></i> Scarica per Mac</button>
         </div>
+        
       </div>
 
     </section>
@@ -105,7 +125,8 @@
       <div class="end">
         <div class="logo">Logo</div>
 
-        <div class="pulsante"><button>bottone</button></div>
+        <div class="button">
+          <button id="footer-button">Registrati</button></div>
       </div>
 
     </footer>
